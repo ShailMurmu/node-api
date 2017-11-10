@@ -6,7 +6,7 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp',(err, db) => {
     
     db.collection('Users').insertOne({
         name: 'Shailendra',
-        age: 24,
+        age: 27,
         location: 'Bit Mesra'
     }, (err, res) => {
         if(err) {return console.log('Unable to insert user');}

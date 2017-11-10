@@ -10,7 +10,13 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp',(err, db) => {
 //       console.log('Unable to delete users ',err);
 //   });
     
-    db.collection('Users').findOneAndDelete({_id: new ObjectId('5a04b6be9edb2e1e3c8e66fa')}).then((res) => {
+//    db.collection('Users').findOneAndDelete({_id: new ObjectId('5a05a2bcef5513084478e8d6')}).then((res) => {
+//       console.log(res);
+//   }, (err) => {
+//       console.log('Unable to delete users ',err);
+//   });
+    
+     db.collection('Users').findOneAndDelete({name: 'Shailendra'}).then((res) => {
        console.log(res);
    }, (err) => {
        console.log('Unable to delete users ',err);
